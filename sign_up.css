@@ -1,0 +1,66 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+/* Fredericka the Great */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap');
+/* Rubik Microbe */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+/* PT Sans */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap');
+/* Playfair Display SC */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+/* Quicksand */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #E0FFFF;
+    border: 0.5px solid black;
+    border-radius: 10px;
+}
+
+.title{
+    font-size: 25px;
+    font-family: Playfair Display SC;
+    text-align: center;
+}
+
+label{
+    font-family: Quicksand;
+}
+
+input{
+    width: 400px;
+    padding: 5px 3px;
+    margin: 8px 0;
+    display:block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Quicksand;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]{
+    width: 400px;
+    padding: 10px 3px;
+    margin: 8px 0;
+    display:block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Quicksand;
+    margin-bottom: 10px;
+    background-color: aqua;
+    margin-top: 20px;
+}
+
