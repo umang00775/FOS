@@ -280,6 +280,18 @@ header.sticky ul li a:hover{
     background-color: white;
 }
 
+.searchBar{
+    height: 30px;
+    border: 1px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    align-items: center;
+}
+
+.searchBar button{
+    height: 100%;
+}
+
 
 .searchBar input{
     color: white;
@@ -291,8 +303,6 @@ header.sticky ul li a:hover{
     font-size: 20px;
     border-radius: 5px;
     background-color: transparent;
-    border: 1px solid white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .searchBar input::placeholder{
