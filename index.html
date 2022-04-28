@@ -115,7 +115,8 @@
                     for(let j=0; j<shop_name.length; j++){
                         if((myArray[i].toLowerCase == final_arr[j].toLowerCase)){
                             console.log("complete");
-                            window.open("");
+                            sessionStorage.setItem('item_name', myArray[i]);
+                            window.open("buy_items.html");
                         }
                     }
                 }
