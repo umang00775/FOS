@@ -2,35 +2,41 @@
 <html>
     <head>
         <title>Sign Up</title>
-        <link rel="stylesheet" href="sign_up.css">
+        <link rel="stylesheet" href="CSS/sign_up.css">
     </head>
 
     <body>
-        <div class="container">
-            <div class="title">Sign Up</div>
-            <div class="form">
-                <form action="">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="firstname" placeholder="Name">
+        <section class="outer">
+            <section class="inner">
+                <div class="container">
+                    <div class="title">Sign Up</div>
+                    <div class="form">
+                        <form action="">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="firstname" placeholder="Name" required>
+        
+                            <label for="phone">Phone Number</label>
+                            <input type="number" id="phone" name="phonenumber" placeholder="9876543210" required>
+        
+                            <label for="houseno">House No.</label>
+                            <input type="text" id="houseno" name="houseno" placeholder="House No" required>
+        
+                            <label for="street">Street</label>
+                            <input type="text" id="street" name="street" placeholder="Street" required>
+        
+                            <label for="area">Area</label>
+                            <input type="text" id="area" name="area" placeholder="Area" required>
+        
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city" placeholder="City" required>
+        
+                            <input type="submit" value="Submit">
 
-                    <label for="phone">Phone Number</label>
-                    <input type="number" id="phone" name="phonenumber" placeholder="9876543210">
-
-                    <label for="houseno">House No.</label>
-                    <input type="text" id="houseno" name="houseno" placeholder="House No">
-
-                    <label for="street">Street</label>
-                    <input type="text" id="street" name="street" placeholder="Street">
-
-                    <label for="area">Area</label>
-                    <input type="text" id="area" name="area" placeholder="Area">
-
-                    <label for="city">City</label>
-                    <input type="text" id="city" name="city" placeholder="City">
-
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-        </div>
+                            <a href="log_in.html">Already Have An Account? Login</a>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </section>
     </body>
 </html>

@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap'); /* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap'); /* Staatliches */
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap'); /* STIX Two Text */
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap'); /* Frank Ruhl Libre */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap'); /* Quicksand */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap'); /* Inter */
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&display=swap'); /* Alumni Sans Inline One */
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap'); /* Cookie */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+}
+
+/* Logo CSS */
+.navigation .logo{
+    text-decoration: none;
+    font-family: Archivo Black;
+}
+
+.navigation .logo span{
+    font-size: 45px; 
+    padding:0 10px;
+}
+
+.navigation .logo span:first-child{
+    color: crimson;
+    font-family: Alumni Sans Inline One;
+    text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+    margin-right: -5px;
+}
+
+.navigation .logo span{
+    color: #fff;
+    font-family: Alumni Sans Inline One;
+    margin-left: 0px;
+    text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+    font-size: 50px;
+}
+
+
+/* General CSS */
+
+.banner{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("Photos/background.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.banner .content h1{
+    font-size: 75px;
+    font-family:Staatliches;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: -1px 0px crimson,0px 1px crimson, 1px 0px crimson, 0px -1px  crimson;
+}
+
+.banner .content h1 span{
+    font-size: 80px;
+    color: crimson;
+}
+
+.banner .content p{
+    line-height: 30px;
+    font-size: 30px;
+    font-family : Cookie ;
+    font-weight: 400;
+    color: #ffff;
+    letter-spacing: 2.5px;
+}
+
+.banner .content{
+    text-align: center;
+    max-width: 700px;
+}
+
+.banner .content a{
+    font-family: Frank Ruhl Libre;
+    font-weight: 900;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 20px;
+    color: crimson;
+    background-color: rgba(220, 20, 60, 0.2);
+    border: 1px solid crimson;
+    border-radius: 10px;
+    transition:letter-spacing;
+    transition-duration: 0.5s;
+    margin: 10px;
+    display: inline-block;
+}
+
+.banner .content a:hover{
+    letter-spacing: 3px;
+}
+
+/* Navigation Menu */
+.navigation{
+    margin-top: 30px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 10000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    transition: 0.5s;
+}
+
+.navigation ul{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation ul li a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    padding: 0 2vw;
+    font-size: 1.5vw;
+    font-weight: 300;
+    font-family:Quicksand;
+    transition: color 0.5s;
+}
+
+.navigation ul li a:hover{
+    color: crimson;
+}
+
+header.sticky{
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    margin: 0 0;
+    margin-top: 0;
+    padding: 0px 60px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.01);
+}
+
+header.sticky ul li a{
+    color: #fff;
+    transition: color 0.5s;
+}
+
+header.sticky ul li a:hover{
+    color: crimson;
+}
+
+
+
+
+/* Menu CSS */
+.menu{
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+.title h1{
+    font-size:35px;
+    color: #fff;
+    text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+}
+
+.title h1 span{
+    font-size: 40px;
+    color: crimson;
+}
+
+.menu .box .contentBox{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border-radius: 15px;
+    border: 1px solid white;
+    transition:0.5s;
+}
+
+.menu .box .contentBox:hover{
+    border: 1px solid black;
+}
+
+.menu .box{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.menu .box .imgBox{
+    display: flex;
+    justify-content: center;
+}
+
+.menu .box .imgBox img{
+    height: 250px;
+    width: 250px;
+    border-radius: 15px;
+    display: flex;
+    object-fit: cover;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.menu .box .contentBox .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu .box .contentBox .content p a,.menu .box .contentBox .content p{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Quicksand;
+}
+
+
+/* Selection CSS */
+::selection{
+    background-color: black;
+    color: #fff;;
+}
+
+.banner .content a{
+    -webkit-user-select: none;        
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+}
+
+/* Footer CSS */
+.footer{
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid dimgrey;
+}
+
+.footer h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: dimgrey;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 10px 0;
+}
+
+.footer h1 span{
+    color: crimson;
+    font-weight: 500;
+}
+
+.mapBox{
+    padding: 20px;
+    background-color: white;
+}
+
+
+.searchBar input{
+    color: white;
+    height: 28px;
+    outline: none;
+    border: none;
+    font-family: Quicksand;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.searchBar input::placeholder{
+    color: white;
+    font-family: Quicksand;
+}
+
+.searchBar input:focus{
+    outline: none;
+    border: 1px solid crimson;
+    color: white;
+}
+
+.lotti_player1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+
+/* contact us */
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mapBox iframe{
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contact_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.form{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input, textarea{
+    outline: none;
+    border: 1px solid black;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+}
