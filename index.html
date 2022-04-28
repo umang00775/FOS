@@ -13,7 +13,7 @@
             <ul>
                 <li><a href="#">Items</a></li>
                 <li>
-                    <div class="searchBar"><input type="text" placeholder="Search"></div>
+                    <div class="searchBar"><input type="text" id="search_query"placeholder="Search"></div>
                 </li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="log_in.html">Log In</a></li>
@@ -63,6 +63,8 @@
         <script>
             const items = ["Dabeli","Dal Bhat","Khaman","Khandvi","Laddu","Paneer tikka masala","Pani puri","Pav bhaji","Undhiyu"];
             const price = [70,20,50,70,50,70,50,30,450,10];
+            const shop_name = ["Amul","Jay Ambe Restaurant","Havmor","Plapinoz","Jimit Vadapav","Kaushik Panipuri","Seasonal Centre"];
+
             let html_code = "";
 
             for(let i=0; i<items.length; i++){
@@ -76,10 +78,20 @@
                     "<div class=\"content\">"
                     +    "<p><a href=\"\">" + items[i] + "</a></p>"
                     +    "<p class=\"price\">&#8377 " +  price[i] + "</p>"
-                    +    "<p>Rating :</p>"
+                    +    "<p>" + shop_name[i] + "</p>"
                     + "</div></div>" ;
                 }
                 document.getElementById("box").innerHTML = html_code;
+
+                let query = search_query.value;
+
+                function countWords(query) {
+                    query = query.replace(/(^\s*)|(\s*$)/gi,"");
+                    query = query.replace(/[ ]{2,}/gi," ");
+                    query = query.replace(/\n /,"\n");
+                    return query.split(' ').length;
+                }
+
         </script>
     </body>
 </html>
