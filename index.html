@@ -20,6 +20,7 @@
                 </li>
                 <li><a href="#">Explore</a></li>
                 <li><a href="about.html">About Us</a></li>
+                <li><a href="add_shop_first.html">Bussiness</a></li>
                 <li class="account_box"><a href="log_in.html"><img src="PHOTOS/account.png" class="nav_icon account" alt=""></a></li>
             </ul>
         </header>
@@ -118,7 +119,7 @@
                         if((myArray[i].toLowerCase == final_arr[j].toLowerCase)){
                             console.log("complete");
                             window.open("buy_items.html");
-                            sessionStorage.setItem('item_name', search_query.value);
+                            localStorage.setItem('item_name', final_arr[i]);
                         }
                     }
                 }

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap'); /* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap'); /* Staatliches */
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap'); /* STIX Two Text */
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap'); /* Frank Ruhl Libre */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap'); /* Quicksand */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap'); /* Inter */
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&display=swap'); /* Alumni Sans Inline One */
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap'); /* Cookie */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap'); /* Abril Fatface */
+
+/* Colors */
+:root{
+    --primary:crimson;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    cursor: url('Photos/spoon.png'), auto;
+}
+
+/* Logo CSS */
+.navigation .logo{
+    text-decoration: none;
+    font-family: Archivo Black;
+}
+
+.navigation .logo span{
+    padding:0 10px;
+    color: crimson;
+    font-family: Alumni Sans Inline One;
+    margin-left: 0px;
+    text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+    font-size: 50px;
+}
+
+
+/* General CSS */
+
+.banner{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("Photos/background.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.banner .content h1{
+    font-size: 75px;
+    font-family:Staatliches;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: -1px 0px black,0px 1px black, 1px 0px black, 0px -1px  black;
+}
+
+.banner .content h1 .span1{
+    font-size: 80px;
+    color: blue;
+}
+.banner .content h1 .span2{
+    font-size: 80px;
+    color: crimson;
+}
+
+.banner .content p{
+    line-height: 30px;
+    font-size: 30px;
+    font-family : Abril Fatface ;
+    font-weight: 400;
+    color: #ffff;
+    letter-spacing: 2.5px;
+}
+
+.banner .content{
+    text-align: center;
+    max-width: 700px;
+}
+
+.banner .content a{
+    font-family:Inter;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 20px;
+    color: white;
+    background-color: crimson;
+    border: 1px solid crimson;
+    transition:letter-spacing;
+    transition-duration: 0.5s;
+    margin: 10px;
+    display: inline-block;
+}
+
+.banner .content a:hover{
+    letter-spacing: 3px;
+}
+
+/* Navigation Menu */
+.navigation{
+    margin-top: 30px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 10000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    transition: 0.5s;
+}
+
+
+header.sticky{
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    margin: 0 0;
+    margin-top: 0;
+    padding: 0px 60px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.01);
+}
+
+header.sticky ul li a{
+    color: #fff;
+    transition: color 0.5s;
+}
+
+header.sticky ul li a:hover{
+    color: crimson;
+}
