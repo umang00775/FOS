@@ -25,23 +25,15 @@ body{
 }
 
 .navigation .logo span{
-    font-size: 45px; 
     padding:0 10px;
-}
-
-.navigation .logo span:first-child{
     color: crimson;
-    font-family: Alumni Sans Inline One;
-    text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
-    margin-right: -5px;
-}
-
-.navigation .logo span{
-    color: #fff;
     font-family: Alumni Sans Inline One;
     margin-left: 0px;
     text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
     font-size: 50px;
+}
+#search{
+    width: 50px;
 }
 
 
