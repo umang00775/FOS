@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap'); /* Inter */
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&display=swap'); /* Alumni Sans Inline One */
 @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap'); /* Cookie */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap'); /* Abril Fatface */
 
 /* Colors */
 :root{
@@ -22,6 +23,7 @@
 
 body{
     min-height: 100vh;
+    cursor: url('Photos/spoon.png'), auto;
 }
 
 /* Logo CSS */
@@ -70,7 +72,7 @@ body{
 .banner .content p{
     line-height: 30px;
     font-size: 30px;
-    font-family : Cookie ;
+    font-family : Abril Fatface ;
     font-weight: 400;
     color: #ffff;
     letter-spacing: 2.5px;
@@ -88,10 +90,9 @@ body{
     text-align: center;
     padding: 5px 10px;
     font-size: 20px;
-    color: crimson;
-    background-color: rgba(220, 20, 60, 0.2);
+    color: white;
+    background-color: crimson;
     border: 1px solid crimson;
-    border-radius: 10px;
     transition:letter-spacing;
     transition-duration: 0.5s;
     margin: 10px;
@@ -314,7 +315,7 @@ header.sticky ul li a:hover{
     background-color: #fff;
     border: none;
     outline: none;
-    border-bottom-right-radius: 15px;
+    border-bottom-right-radius: 12px;
     transition: 0.5s;
 }
 #search:hover{
