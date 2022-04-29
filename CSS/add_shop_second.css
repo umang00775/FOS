@@ -50,7 +50,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("Photos/background.jpg");
+    background-image: url("Photos/background_two.jpg");
     background-size: cover;
     min-height: 100vh;
     background-attachment: fixed;
