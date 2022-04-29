@@ -104,6 +104,7 @@
                 const myArray = query.split(" ");
                 // let no_of_queries = countWords(search_query.value);
                 console.log(myArray);
+
                 
 
                 const items = ["Dabeli","Dal Bhat","Khaman","Khandvi","Laddu","Paneer tikka masala","Pani puri","Pav bhaji","Undhiyu"];
@@ -116,8 +117,8 @@
                     for(let j=0; j<shop_name.length; j++){
                         if((myArray[i].toLowerCase == final_arr[j].toLowerCase)){
                             console.log("complete");
-                            sessionStorage.setItem('item_name', myArray[i]);
                             window.open("buy_items.html");
+                            sessionStorage.setItem('item_name', search_query.value);
                         }
                     }
                 }
