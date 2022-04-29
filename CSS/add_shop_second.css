@@ -154,6 +154,13 @@ form{
     flex-wrap: wrap;
 }
 
+form div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 input{
     border: none;
     outline: none;
