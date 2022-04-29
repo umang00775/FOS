@@ -7,6 +7,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&display=swap'); /* Alumni Sans Inline One */
 @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap'); /* Cookie */
 
+/* Colors */
+:root{
+    --primary:crimson;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -31,9 +37,6 @@ body{
     margin-left: 0px;
     text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
     font-size: 50px;
-}
-#search{
-    width: 50px;
 }
 
 
@@ -129,7 +132,7 @@ body{
     display: inline-block;
     text-decoration: none;
     text-align: center;
-    padding: 0 2vw;
+    padding: 0 1.5vw;
     font-size: 1.5vw;
     font-weight: 300;
     font-family:Quicksand;
@@ -142,7 +145,7 @@ body{
 
 header.sticky{
     background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     margin: 0 0;
     margin-top: 0;
     padding: 0px 60px;
@@ -273,18 +276,18 @@ header.sticky ul li a:hover{
 }
 
 .searchBar{
-    height: 30px;
+    height: 35px;
     border: 1px solid white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
     align-items: center;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .searchBar button{
     height: 100%;
 }
-
-
 .searchBar input{
     color: white;
     height: 28px;
@@ -296,17 +299,60 @@ header.sticky ul li a:hover{
     border-radius: 5px;
     background-color: transparent;
 }
-
 .searchBar input::placeholder{
     color: white;
     font-family: Quicksand;
 }
-
 .searchBar input:focus{
     outline: none;
-    border: 1px solid crimson;
     color: white;
 }
+#search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-bottom-right-radius: 15px;
+    transition: 0.5s;
+}
+#search:hover{
+    background-color: var(--primary);
+}
+.nav_icon{
+    width: 30px;
+    padding: 2px;
+    object-fit: cover;
+}
+
+.account_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    height: 35px;
+    width: 35px;
+    padding: 2px;
+    border-radius: 50%;
+    background: white;
+    transition: 0.5s;
+}
+.account:hover{
+    background-color: var(--primary);
+}
+
+
+
+
+
+
 
 .lotti_player1{
     display: flex;
@@ -319,15 +365,32 @@ header.sticky ul li a:hover{
 
 
 /* contact us */
+
 .contact{
+    position: relative;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: url("Photos/contact_bg.jpg");
+    background-size: cover;
+    min-height: 80vh;
+    background-attachment: fixed;
+}
+
+.mapBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
 }
 
 .mapBox iframe{
-    margin: 20px;
+    padding: -10px;
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -348,6 +411,7 @@ header.sticky ul li a:hover{
     width: 500px;
     height: 500px;
     border-radius: 15px;
+    background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
